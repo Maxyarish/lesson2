@@ -3,12 +3,18 @@
 }
 /*стилі для таблиці*/
 body {
+    margin: 0;
+    background-image: url(./assets/images/Site-background-light.png) ;
     font-family: rubik, helvetica, arial, sans-serif;
     font-size: 14px;
 }
+
 a {
-    color: rgb(0, 84, 168);
-    text-decoration:none;
+    color: rgb(0, 85, 169);
+    text-decoration: none;
+}
+a:hover{
+    text-decoration:underline;
 }
 img{
     width: 100%;
@@ -29,7 +35,7 @@ img{
 .main-article{
     min-width:720px;
     /*max-width:1900px;*/
-    width:45%;
+    width:65%;
     margin:auto;
     background-color: rgb(224, 224, 224);
     padding: 30px;
@@ -50,7 +56,7 @@ border-color: rgb(0, 0, 0);
 border-left-width: 4px;
 border-width: 1px;
 border-style: solid;
-    background-color:rgb(186, 216, 240)
+    background-color:rgba(154, 210, 255, 0.753)
 }
 .info-icon{
     display: inline-block;
@@ -63,7 +69,7 @@ border-style: solid;
     border: 2px solid color(187 194 198);
      
     color:white;
-    background-color:rgb(68, 175, 247);
+    background-color:rgb(121, 179, 255);
 
     text-align: center;
 
@@ -126,15 +132,10 @@ left: 525px;
     border:2px solid;
     background-color:rgb(207, 207, 207);
     padding:1em;
-    height:150px;
     width: 150px;
-    float:left;
 }
 .minephoto{
     width:400px ;
 height: 70px;
     float: right;
-}
-.w-75{
-   padding: 7em;
 }

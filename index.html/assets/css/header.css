@@ -1,0 +1,133 @@
+  .main-header{
+    height: 205px;
+    padding-top: 100px;
+/*background-color:rgba(110, 185, 252, 0.62);*/
+background-image: url(../images/Light_background_deepslate_transition.png), url(../images/Light_background_grass.png), linear-gradient(0deg, rgba(3,83,103,1) 6%, rgba(157,235,255,1) 49%, rgba(91,177,255,1) 100%);
+background-repeat: repeat-x, repeat-x, no-repeat;
+background-position: bottom left, 0 120px, 0 0;
+
+  }
+
+  main{
+    margin-top:-50px;
+  }
+
+  .main-wrapper{
+    min-width: 720px;
+    width: 70%;
+    margin:auto;
+  }
+
+  .main-menu{
+list-style: none;
+margin: -16px;
+  }
+
+  .main-menu-item{
+display:inline-block;
+ margin: 0 1.4em;
+ position: relative;
+ padding-bottom: 30px;
+  }
+
+  .main-menu-item::after{
+content: '\25BC';
+  }
+  .main-menu-item:hover::after{
+    content: '\25BE';
+  }
+
+  .main-menu-item > .submenu:after{
+      content: "";
+      position: absolute;
+      width: 0;
+      height: 0;
+      border-width: 10px;
+      border-style: solid;
+      border-color: transparent transparent #FFFFFF transparent;
+      top: -20px;
+      left: 42%;
+      }
+
+  .main-menu-item>a{
+    color:black;
+    text-transform: uppercase;
+    font-weight: bolder;
+  }
+
+  .main-menu-item>a:hover{
+    text-decoration: underline;
+  }
+
+  .main-menu-item:hover>.submenu{
+    display: block;
+  }
+
+  .main-menu-item:hover>.submenu{
+    display: block;
+  }
+
+  .submenu{
+    display: none;
+width: 100%;
+min-width: 150px;
+max-width: 200%;
+    position: absolute;
+    top: 30px;
+    left: -50%;
+    list-style: none;
+    padding: 7px;
+    background-color:rgb(255, 255, 255);
+    margin: 0;
+  }
+
+  .left0{
+    left:0;
+  }
+
+  .left10{
+    left: -10%;
+  }
+
+
+
+  .submenu-item{
+    position: relative;
+  }
+  .submenu-item:has(>.submenu)::after{
+    content: '\1433';
+    position: absolute;
+    top:5px;
+    right: 0;;
+  }
+  .submenu-item:hover>.submenu{
+display: block;
+top: 0;
+left:100%
+  }
+  .submenu-link{
+    display: inline-block;
+    background-color:rgb(255, 255, 255);
+    padding:5px 9px;
+    text-transform: capitalize;
+    color:black;
+  }
+.submenu-link:hover{
+  background-color:rgb(232, 233, 231);
+  color: blue;
+}
+.explore::before{
+  content: url(./../icons/book-open-variant.svg);
+  display: inline-block;
+  width: 25px;
+  transform: translate(-5px, 6px);
+  }
+  
+  .home::before{
+    content: url(./../icons/home.svg);
+    display: inline-block;
+    width: 24px;
+    transform: translate(-3px, 6px);
+  }
+ 
+ 

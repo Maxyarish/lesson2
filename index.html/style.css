@@ -63,10 +63,10 @@ border-style: solid;
 
     width:45px;
     height: 45px;
-    padding: 3px;
+    padding: 4px;
     margin-right: 4%;
     border-radius: 50%;
-    border: 2px solid color(187 194 198);
+    border: 1px solid color(187 194 198);
      
     color:white;
     background-color:rgb(121, 179, 255);

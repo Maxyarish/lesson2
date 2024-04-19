@@ -1,15 +1,51 @@
+ 
   .main-header{
-    height: 205px;
-    padding-top: 100px;
+    height: 250px;
+    padding-top: 20px;
 /*background-color:rgba(110, 185, 252, 0.62);*/
 background-image: url(../images/Light_background_deepslate_transition.png), url(../images/Light_background_grass.png), linear-gradient(0deg, rgba(3,83,103,1) 6%, rgba(157,235,255,1) 49%, rgba(91,177,255,1) 100%);
 background-repeat: repeat-x, repeat-x, no-repeat;
 background-position: bottom left, 0 120px, 0 0;
-
   }
 
+  .link-wraper{
+text-align: right;
+margin-bottom: 50px;
+  }
+.sing-in_1,
+.register_1{
+  display: inline-block;
+  height: 34px;
+  text-align: center;
+  padding:8px;
+  border:1px solid #000;
+  font-weight: 1000;
+  text-transform: uppercase;
+}
+.sing-in_1{
+  color: #000;
+}
+.register_1{
+  background-color: rgb(0, 85, 255);
+  color: #FFFFFF;
+  position: relative;
+  padding-left: 45px;
+}
   main{
     margin-top:-50px;
+  }
+  
+  .register_1::before{
+    content:'';
+    display: inline-block;
+    background-repeat:no-repeat;
+    width: 25px;
+    height: 25px;
+background-image:url(../icons/account-circle-outline.svg);
+position:absolute;
+left:18px;
+top: 5px;
+
   }
 
   .main-wrapper{
@@ -34,7 +70,7 @@ display:inline-block;
 content: '\25BC';
   }
   .main-menu-item:hover::after{
-    content: '\25BE';
+    content: '\25B2';
   }
 
   .main-menu-item > .submenu:after{
@@ -81,16 +117,6 @@ max-width: 200%;
     margin: 0;
   }
 
-  .left0{
-    left:0;
-  }
-
-  .left10{
-    left: -10%;
-  }
-
-
-
   .submenu-item{
     position: relative;
   }
@@ -116,18 +142,28 @@ left:100%
   background-color:rgb(232, 233, 231);
   color: blue;
 }
+
+
+.left0{
+  left:0;
+}
+
+.left10{
+  left: -10%;
+}
 .explore::before{
   content: url(./../icons/book-open-variant.svg);
   display: inline-block;
-  width: 25px;
-  transform: translate(-5px, 6px);
+  width: 15px;
+  transform: translate(-5px, 3px);
   }
   
   .home::before{
     content: url(./../icons/home.svg);
     display: inline-block;
-    width: 24px;
-    transform: translate(-3px, 6px);
+    width: 15px;
+    transform: translate(-3px, 3px);
+
   }
  
  
